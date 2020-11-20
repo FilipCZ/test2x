@@ -23,4 +23,4 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - run: Set-LocalUser -Name "installer" -Password (ConvertTo-SecureString -AsPlainText "aaa.123" -Force)
     - name: Create Tunnel
-      run: .\ngrok\ngrok.exe tcp --region=eu 3389
+      run: .\ngrok\ngrok.exe http --region=eu 8084
