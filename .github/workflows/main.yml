@@ -21,6 +21,7 @@ jobs:
     - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
     - run: New-NetFirewallRule -DisplayName 'Allow TCP port 8084 inbound' -Profile 'Public' -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8084
     - run: New-NetFirewallRule -DisplayName 'Allow TCP port 8084 outbound' -Profile 'Public' -Direction Outbound -Action Allow -Protocol TCP -LocalPort 8084
+    - run: Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - run: Set-LocalUser -Name "installer" -Password (ConvertTo-SecureString -AsPlainText "aaa.123" -Force)
