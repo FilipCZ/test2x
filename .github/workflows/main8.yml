@@ -1,4 +1,4 @@
-name: CI
+name: CIw10
 
 on: [push]
 
