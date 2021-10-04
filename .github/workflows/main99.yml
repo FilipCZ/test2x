@@ -1,4 +1,4 @@
-name: CIwin
+name: CI
 
 on: [push]
 
