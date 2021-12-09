@@ -1,4 +1,4 @@
-name: WinCI
+name: WinCI2
 
 on: [push]
 
