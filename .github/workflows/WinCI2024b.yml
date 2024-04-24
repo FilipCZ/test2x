@@ -34,90 +34,51 @@ jobs:
     - name: Keep-alive loop (1/13)
       run: |
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (2/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (3/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (4/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (5/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (6/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (7/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (8/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (9/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (10/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (11/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (12/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
     - name: Keep-alive loop (13/13)
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\serv\clicon.exe tcp --region=eu 3389"'
         ./loop.ps1
-        Stop-Process -Name "ngrok"
-        Stop-Process -Name "clicon"
-        Start-Sleep -Seconds 900
