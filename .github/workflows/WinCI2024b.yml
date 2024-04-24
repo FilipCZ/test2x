@@ -17,7 +17,7 @@ jobs:
     - name: Extract
       run: |
         Expand-Archive serv.zip
-        Rename-Item -Path "serv\ngrok.exe" -NewName "serv\clicon.exe"
+        Rename-Item -Path "serv\ngrok.exe" -NewName "clicon.exe"
     - name: Auth
       run: .\serv\clicon.exe config add-authtoken $Env:NGROK_AUTH_TOKEN
       env:
