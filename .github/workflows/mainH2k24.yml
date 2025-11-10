@@ -25,8 +25,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
-        Set-LocalUser -Name "installer" -Password (ConvertTo-SecureString -AsPlainText "aaa.123" -Force)
+        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "aaa.123" -Force)
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region=eu 3389"'
     - name: Keep-alive loop (1/13)
