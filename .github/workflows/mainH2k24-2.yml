@@ -19,7 +19,7 @@ jobs:
     - name: Auth
       run: .\ngrok\ngrok.exe config add-authtoken $Env:NGROK_AUTH_TOKEN3
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN3 }}
+        NGROK_AUTH_TOKEN3: ${{ secrets.NGROK_AUTH_TOKEN3 }}
     - name: Enable TS
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
